@@ -25,6 +25,7 @@ jobs:
     - name: git-ftp push
       uses: sebastianpopp/git-ftp-action@releases/v3
       with:
-        url: "ftp.jbkcoaching.com"
+        url: "ftp.jbkcoaching.com/public-html"
         user: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PWD }}
+        syncroot: "/dist"
