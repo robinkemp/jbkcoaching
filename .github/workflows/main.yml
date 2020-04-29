@@ -28,4 +28,4 @@ jobs:
         url: "ftp.jbkcoaching.com/public_html"
         user: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PWD }}
-        syncroot: "/dist"
+        local-dir: "dist"
