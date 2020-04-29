@@ -38,7 +38,7 @@ jobs:
     - name: git-ftp push
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
-        ftp-server: "ftp.jbkcoaching.com/public_html"
+        ftp-server: "ftp.jbkcoaching.com/public_html/"
         ftp-username: ${{ secrets.FTP_USER }}
         ftp-password: ${{ secrets.FTP_PWD }}
         local-dir: "dist/"
